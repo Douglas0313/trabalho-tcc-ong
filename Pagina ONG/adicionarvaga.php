@@ -1,4 +1,15 @@
-<h2>Adicionar vaga de emprego</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <div class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-middle">
+
+ <h1 class="w3-center w3-teal w3-round-large" id="ong">Adicionar vagas de empregos</h1>
 
 <form method="post" action="adicionarvaga.php">
   <label>Nome da ONG:</label>
@@ -18,6 +29,15 @@
 
   <input type="submit" value="Adicionar vaga">
 </form>
+
+
+
+
+</html>
+
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
