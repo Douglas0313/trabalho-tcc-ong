@@ -97,20 +97,11 @@ session_start();
 	</div>
 
 		<h2>Vagas de emprego</h2>
-	<a href="#" onclick="mostrarVagas()">Consultar oportunidades</a>
 
-	<script>
-		function mostrarVagas() {
-			var xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200) {
-					document.getElementById("vagas").innerHTML = this.responseText;
-				}
-			};
-			xhttp.open("GET", "vagas.php", true);
-			xhttp.send();
-		}
-	</script>
+
+		<button onclick="window.location.href='vagas.php'">Consultar oportunidades</button>
+
+	
 
 	<div id="vagas"></div>
 

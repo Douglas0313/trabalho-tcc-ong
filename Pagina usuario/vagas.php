@@ -1,37 +1,31 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "root";
-$dbname = "mydb";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-// Verifica se a conexão foi bem-sucedida
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-
+require_once 'config-banco-apoia.php';
 
 // Realiza a consulta no banco de dados
-$sql = "SELECT nomeOng, titulo, valorSalario, endereco, descricao FROM Vagas";
-$result = mysqli_query($conn, $sql);
+$sql = "SELECT nome_Empresa, titulo, valor_salario, descricao FROM Vagas";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
 
 // Verifica se há resultados
-if (mysqli_num_rows($result) > 0) {
-  // Exibe os resultados na página em uma lista
-  echo "<ul>";
-  while ($row = mysqli_fetch_assoc($result)) {
-    echo "<li>Nome da ONG: " . $row['nomeOng'] . "</li>";
-    echo "<li>Título da vaga: " . $row['titulo'] . "</li>";
-    echo "<li>Valor do salário: " . $row['valorSalario'] . "</li>";
-    echo "<li>Endereço: " . $row['endereco'] . "</li>";
-    echo "<li>Descrição: " . $row['descricao'] . "</li>";
-    echo "<br>";
+if ($stmt->rowCount() > 0) {
+  // Exibe os resultados em uma tabela na página
+  echo "<table>";
+  echo "<tr><th>Nome da ONG</th><th>Título da Vaga</th><th>Valor do Salário</th><th>Descrição</th></tr>";
+  while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    echo "<tr>";
+    echo "<td>" . $row['nome_Empresa'] . "</td>";
+    echo "<td>" . $row['titulo'] . "</td>";
+    echo "<td>" . $row['valor_salario'] . "</td>";
+    echo "<td>" . $row['descricao'] . "</td>";
+    echo "</tr>";
   }
-  echo "</ul>";
+  echo "</table>";
 } else {
   echo "Nenhuma vaga encontrada.";
 }
 
 // Fecha a conexão com o banco de dados
-mysqli_close($conn);
+$stmt = null;
+$pdo = null;
+
 ?>
