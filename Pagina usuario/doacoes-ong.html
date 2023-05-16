@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    
+    <div class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-middle">
+
+    <h1 class="w3-center w3-teal w3-round-large" id="usuario">Doações</h1>
+    <form action="" w3-co  method="post" class="w3-container">
+
+        <label class="w3-text-teal" style="font-weight: bold;">Nome</label>
+        <input type="text" name="nome" class="w3-input w3-light-grey w3-
+       border" placeholder="Digite o seu nome completo*" required><br>
+
+       <label for="cpf" class="w3-text-teal" style="font-weight: bold;">CPF</label>
+       <input type="text" name="cpf" id="cpf" class="w3-input w3-light-grey w3-
+       border" placeholder="Digite o seu CPF*" maxlength="14" required><br>
+
+
+       <label for="telefone" class="w3-text-teal" style="font-weight: bold;">Telefone</label>
+        <input type="text" name="telefone" id="telefone" class="w3-input w3-light-grey w3-
+        border" placeholder="Digite o seu número de telefone*" maxlength="15" required><br>
+
+        <label class="w3-text-teal" style="font-weight: bold;">Data de nascimento</label>
+        <input type="text" name="data-nascimento" id="dataNascimento" class="w3-input w3-light-grey w3-
+       border" placeholder="Data de nascimento*" maxlength="10" required><br>
+
+       <label for="cpf" class="w3-text-teal" style="font-weight: bold;">Gênero</label>
+       <select name="genero" id="" class="w3-input w3-light-grey w3-
+       border" placeholder="*" required>>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Outro">Outro</option>
+
+        </select> <br>
+
+    <label class="w3-text-teal" style="font-weight: bold;">Email</label>
+    <input type="email" name="email" class="w3-input w3-light-grey w3-
+    border" placeholder="Digite seu email*" required><br>
+
+
+    
+
+     <a href="doacoes-pagina2.html">
+
+
+     Continuar
+
+     </a>
+
+</form>
+</div>
+
+<script>
+    const cpfInput = document.getElementById('cpf');
+    
+    cpfInput.addEventListener('input', () => {
+      let value = cpfInput.value.replace(/\D/g, ''); // remove todos os caracteres não numéricos
+    
+      // adiciona os traços e pontos se o valor for um CPF válido
+      if (value.length >= 3 && value.length <= 11) {
+        value = value.replace(/(\d{3})(\d{3})?(\d{3})(\d{2})/, '$1.$2.$3-$4');
+      }
+    
+      cpfInput.value = value;
+    });
+    
+    
+    const telefoneInput = document.getElementById('telefone');
+    
+    telefoneInput.addEventListener('input', () => {
+      let value = telefoneInput.value.replace(/\D/g, ''); // remove todos os caracteres não numéricos
+    
+      // adiciona os parênteses, espaço e traço se o valor for um número de telefone válido
+      if (value.length >= 2 && value.length <= 11) {
+        value = value.replace(/(\d{2})(\d{4,5})(\d{4})/, '($1) $2-$3');
+      }
+    
+      telefoneInput.value = value;
+    });
+
+
+
+    // Seleciona o campo de data de nascimento
+let dataNascimento = document.getElementById('dataNascimento');
+
+// Adiciona um evento de teclado ao campo
+dataNascimento.addEventListener('keyup', function (event) {
+
+  // Verifica se o usuário digitou uma data no formato DDMMYYYY
+  let input = event.target.value;
+  input = input.replace(/\D/g, '');
+  input = input.substring(0, 8);
+
+  // Adiciona os traços
+  input = input.replace(/(\d{2})(\d{2})(\d{4})/, '$1-$2-$3');
+
+  // Atualiza o valor do campo de data de nascimento com a data formatada
+  event.target.value = input;
+});
+
+    
+    
+    </script>
+
+
+</body>
+
+</html>
