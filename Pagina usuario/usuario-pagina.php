@@ -1,9 +1,11 @@
-<?php
 
+<?php
 session_start();
 
+if (isset($_GET['nome'])) {
+    $_SESSION['nome_usuario'] = $_GET['nome'];
+}
 ?>
-
 
 
 
@@ -91,7 +93,7 @@ session_start();
 </head>
 <body>
 	<div class="header">
-	<h1>Bem-vindo(a), <?php echo htmlspecialchars($_GET['nome']); ?>!</h1>
+	<h1>Bem-vindo(a), <?php echo htmlspecialchars($_SESSION['nome_usuario']); ?>!</h1>
 		<a href="#">Configurações</a>
 		<a href="login-usuario.html">Sair</a>
 	</div>
@@ -99,7 +101,7 @@ session_start();
 		<h2>Vagas de emprego</h2>
 
 
-		<button onclick="window.location.href='vagas.php'">Consultar oportunidades</button>
+		<a href="vagas.php">Consultar vagas de empregos</a>
 
 	
 
