@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="contatos.css">
+
+
+
+ <title>Entre em contato</title>
+
+</head>
+
+<body>
+
+
+
+    <main>
+
+        <a href="" class="w3-display-topleft">
+
+            <i class="fa fa-arrow-circle-left w3-large w3-teal w3-button w3-xxlarge"></i>
+           </a>
+
+
+               <h1 class="w3-center w3-teal w3-round-large" id="ong">Entre em contato</h1>
+
+        <form method="POST" action="contato-banco.php">
+
+
+            <label for="nomesobrenome" class="w3-text-teal" style="font-weight: bold;">Nome e sobrenome</label>
+            <input type="text" name="nome" id="nome" class="input-padrao" required>
+
+            <label for="email" class="w3-text-teal" style="font-weight: bold;">Email</label>
+            <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone" class="w3-text-teal" style="font-weight: bold;">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+    
+            <label for="mensagem" class="w3-text-teal" style="font-weight: bold;">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <legend class="w3-text-teal" style="font-weight: bold;">Como prefere o nosso contato?</legend>
+                <label for="radio-email">
+                    <input type="radio" name="Contato" value="email" id="radio-email">Email
+                </label>
+                <label for="radio-telefone">
+                    <input type="radio" name="Contato" value="telefone" id="radio-telefone">Telefone
+                </label>
+                <label for="radio-whatsapp">
+                    <input type="radio" name="Contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend class="w3-text-teal" style="font-weight: bold;">Qual horario de preferencia?</legend>
+                <label for="radio-manha">
+                    <input type="radio" name="horario" value="manha" id="email">Manhã
+                </label>
+                <label for="radio-tarde">
+                    <input type="radio" name="Contato" value="tarde" id="tarde">Tarde
+                </label>
+                <label for="radio-noite">
+                    <input type="radio" name="noite" value="noite" id="noite" checked>Noite
+                </label>
+            </fieldset>
+             <br>
+            <button type="submit" class="enviar">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

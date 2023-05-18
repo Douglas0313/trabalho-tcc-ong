@@ -1,0 +1,64 @@
+
+.input-padrao {
+
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.enviar {
+
+width: 40%;
+padding: 15px 0;
+background: orange;
+color: white;
+font-weight: bolder;
+font-size: 18px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+.enviar:hover {
+
+ background: darkorange;
+ transform: scale(1.2);
+
+}
+
+table{
+    margin: 20px 40px;
+}
+
+thead{
+
+background: gray;
+color: white;
+font-weight: bolder;
+
+
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px ;
+}
+
+
+
+footer{
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 40px 0;
+
+}
+
+.copyright {
+    color:white;
+    font-size: 13px;
+    margin: 20PX;
+    
+
+}
