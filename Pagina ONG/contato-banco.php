@@ -1,13 +1,14 @@
 <?php
 require_once 'config-banco-apoia.php';
-$mensagem = filter_input(INPUT_POST, 'mensagem');
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = filter_input(INPUT_POST, 'nome');
     $telefone = filter_input(INPUT_POST, 'telefone');
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-    $preferencia_contato = filter_input(INPUT_POST, 'Contato');
-    $horario = filter_input(INPUT_POST, 'horario');
+    $preferencia_contato = filter_input(INPUT_POST, 'contato_email', 'contato_telefone', 'contato_whatsapp');
+    $mensagem = filter_input(INPUT_POST, 'mensagem');
+    $horario = filter_input(INPUT_POST, 'horario_manha', 'horario_tarde', 'horario_noite');
 
     $sql = $pdo->prepare("INSERT INTO contatos (nome, email, telefone, mensagem, preferencia_contato, horario) VALUES (:nome, :email, :telefone, :mensagem, :preferencia_contato, :horario)");
     $sql->bindValue(':nome', $nome);
