@@ -8,7 +8,7 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body style="background-color: azure;">
 <div class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-middle">
 <h1 class="w3-center w3-teal w3-round-large" id="redefinir-senha">Redefinir senha</h1>
 	<form method="post" action="processarsenha.php">

@@ -9,18 +9,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
 awesome/4.7.0/css/font-awesome.min.css">
 
-<title>Vagas de Empregos</title>
+<title>Histórias das ONGS</title>
 </head>
-<body style="background-color: azure;">
+<body style="background-color: grey;">
 <div class="w3-paddingw3-content w3-half w3-display-topmiddle w3-margin">
-<h1 class="w3-center w3-yellow w3-round-large w3-margin">Vagas disponiveis</h1>
+<h1 class="w3-center w3-yellow w3-round-large w3-margin">Histórias das ONG's</h1>
 <table class="w3-table-all w3-centered w3-text-black">
 <thead>
 <tr class="w3-center w3-green ">
 <th>Nome Da ONG</th>
-<th>Titulo da vaga</th>
-<th>Valor de salário</th>
-<th>Descrição</th>
+<th>Histórias</th>
 </tr>
 <thead>
 
@@ -30,7 +28,7 @@ require_once 'config-banco-apoia.php';
 
 
 // Realiza a consulta no banco de dados
-$sql = "SELECT nome_Empresa, titulo, valor_salario, descricao FROM vagas";
+$sql = "SELECT nome, historia FROM historia_da_ong";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
@@ -41,15 +39,13 @@ if ($stmt->rowCount() > 0) {
 
   while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     echo "<tr>";
-    echo "<td>" . $row['nome_Empresa'] . "</td>";
-    echo "<td>" . $row['titulo'] . "</td>";
-    echo "<td>" . $row['valor_salario'] . "</td>";
-    echo "<td>" . $row['descricao'] . "</td>";
+    echo "<td>" . $row['nome'] . "</td>";
+    echo "<td>" . $row['historia'] . "</td>";
     echo "</tr>";
   }
   echo "</table>";
 } else {
-  echo "Nenhuma vaga encontrada.";
+  echo "Nenhuma história encontrada.";
 }
 
 // Fecha a conexão com o banco de dados
@@ -63,7 +59,7 @@ $pdo = null;
 
 <br>
 
-<button name="btnvoltar"  onclick="location.href='usuario-pagina.php'" class="w3-button w3-teal w3-cell w3-round-large w3-right w3-margin-right">
+<button name="btnvoltar"  onclick="location.href='ONGpn.php'" class="w3-button w3-teal w3-cell w3-round-large w3-right w3-margin-right">
 <i class="w3-xxlarge fa fa-user-plus"></i> Voltar
 </button>
 

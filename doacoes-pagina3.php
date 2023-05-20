@@ -1,8 +1,3 @@
-<?php
-
-session_start();
-?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -16,7 +11,7 @@ session_start();
  
 </head>
 
-<body style="background-color: azure;">
+<body>
     
     
   <div class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-top">
@@ -60,8 +55,8 @@ session_start();
     <input type="text" name="codigo" class="w3-input w3-light-grey w3-
    border" placeholder="Digite o seu nome completo*" required>
 
-   <a href="usuario-pagina.php">Pagar</a>
-   <a href="usuario-pagina.php">Cancelar</a>
+   <a href="index.php">Pagar</a>
+   <a href="index.php">Cancelar</a>
    
       </div>
 
@@ -71,8 +66,8 @@ session_start();
     <label for="boleto" class="w3-text-teal" style="font-weight: bold;">Número do Boleto:</label>
     <input type="text" id="boleto" name="boleto" type="text" name="nome" class="w3-input w3-light-grey w3-border">
 
-    <a href="usuario-pagina.php">Pagar</a>
-   <a href="usuario-pagina.php">Cancelar</a>
+    <a href="index.php">Pagar</a>
+   <a href="index.php">Cancelar</a>
     <br><br>
 
   </div>
@@ -84,8 +79,8 @@ session_start();
     
    <img src="imagens/qr.png" >
     
-   <a href="usuario-pagina.php">Pagar</a>
-   <a href="usuario-pagina.php">Cancelar</a>
+   <a href="index.php">Pagar</a>
+   <a href="index.php">Cancelar</a>
 
    <br><br>
   </div>
@@ -101,8 +96,8 @@ session_start();
     <label for="conta" class="w3-text-teal" style="font-weight: bold;">Conta:</label>
     <input type="text" id="conta" name="conta" class="w3-input w3-light-grey w3-
     border">
-    <a href="usuario-pagina.php">Pagar</a>
-   <a href="usuario-pagina.php">Cancelar</a>
+    <a href="index.php">Pagar</a>
+   <a href="index.php">Cancelar</a>
  
     <br><br>
 

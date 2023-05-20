@@ -1,0 +1,64 @@
+body{
+    background-color: azure;
+}
+
+a{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(122, 255, 255);
+}
+
+#header{
+    border: 3px solid white;
+    margin: auto;
+    background-color: teal;
+    color: white;
+}
+
+#title{
+    text-align: center;
+}
+
+h1{
+    font-size: 100px;
+}
+
+#title{
+    text-align: center;
+}
+
+#login{
+    text-align: right;
+    margin-right: 10px;
+}
+
+#coluna{
+    column-count: 3;
+}
+
+#ad{
+    text-align: center;
+    border: 3px solid teal;
+    background-color: white;
+    margin: auto;
+    font-size: xx-large;
+    height: 200px;
+    padding: 5px;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+#user{
+    text-align: left;
+    padding: 10px;
+    font-size: xx-large;
+    color: white;
+}
+
+button{
+    background-color: teal;
+    font-size: x-large;
+    border: 6px solid teal;
+    color: white;
+    margin-top: 50px;
+}
