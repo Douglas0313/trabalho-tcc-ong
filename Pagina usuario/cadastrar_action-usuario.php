@@ -45,6 +45,6 @@ require 'config-banco-apoia.php';
 
    }
 
-
+   $pdo = null;
 
 ?>
