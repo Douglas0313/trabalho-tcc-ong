@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #333;
+    background-color: teal;
     color: #fff;
     padding: 10px;
 }
@@ -71,4 +71,17 @@ transition: background-color 0.3s ease;
 
 #menu li a:hover {
 background-color: #999;
+}
+
+footer{
+    text-align: center;
+    padding: 40px 0;
+
+}
+
+.copyright {
+    font-size: 13px;
+    margin: 20PX;
+    
+
 }

@@ -13,10 +13,10 @@ awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="background-color: azure;">
 <div class="w3-paddingw3-content w3-half w3-display-topmiddle w3-margin">
-<h1 class="w3-center w3-yellow w3-round-large w3-margin">Vagas disponiveis</h1>
+<h1 class="w3-center w3-teal w3-round-large w3-margin">Vagas disponiveis</h1>
 <table class="w3-table-all w3-centered w3-text-black">
 <thead>
-<tr class="w3-center w3-green ">
+<tr class="w3-center w3-teal ">
 <th>Nome Da ONG</th>
 <th>Titulo da vaga</th>
 <th>Valor de salário</th>
@@ -63,8 +63,8 @@ $pdo = null;
 
 <br>
 
-<button name="btnvoltar"  onclick="location.href='usuario-pagina.php'" class="w3-button w3-teal w3-cell w3-round-large w3-right w3-margin-right">
-<i class="w3-xxlarge fa fa-user-plus"></i> Voltar
+<button onclick="location.href='usuario-pagina.php'" class="w3-button w3-teal w3-round-large w3-right w3-margin-right">
+<i class=""></i> Voltar
 </button>
 
 
