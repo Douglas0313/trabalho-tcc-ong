@@ -8,15 +8,16 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
 awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="icone.png" type="image/x-icon">
 
 <title>Histórias das ONGS</title>
 </head>
-<body style="background-color: grey;">
+<body style="background-color: azure;">
 <div class="w3-paddingw3-content w3-half w3-display-topmiddle w3-margin">
-<h1 class="w3-center w3-yellow w3-round-large w3-margin">Histórias das ONG's</h1>
+<h1 class="w3-center w3-teal w3-round-large w3-margin">Histórias das ONG's</h1>
 <table class="w3-table-all w3-centered w3-text-black">
 <thead>
-<tr class="w3-center w3-green ">
+<tr class="w3-center w3-teal ">
 <th>Nome Da ONG</th>
 <th>Histórias</th>
 </tr>
@@ -60,7 +61,7 @@ $pdo = null;
 <br>
 
 <button name="btnvoltar"  onclick="location.href='ONGpn.php'" class="w3-button w3-teal w3-cell w3-round-large w3-right w3-margin-right">
-<i class="w3-xxlarge fa fa-user-plus"></i> Voltar
+<i class=""></i> Voltar
 </button>
 
 

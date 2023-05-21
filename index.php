@@ -15,6 +15,7 @@
                 <a href="Pagina ONG/login-ong.php">Entrar como ONG</a>
                 <a href="Pagina usuario/login-usuario.html">Entrar como Usuário</a>
                 <a href="cadastrar.html">Cadastrar</a>
+                <a href="Pagina ONG/contatos.html">Entre em contato</a>
             </div>
             <div id="title">
                 <h1>ApoiaONG</h1>

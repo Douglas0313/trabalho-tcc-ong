@@ -8,7 +8,13 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body style="background-color: azure;">
+
+<a href="login-ong.php" class="w3-display-topleft">
+
+    <i class="fa fa-arrow-circle-left w3-large w3-teal w3-button w3-
+   xxlarge"></i>
+   </a>
 <div class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-middle">
 <h1 class="w3-center w3-teal w3-round-large" id="redefinir-senha">Redefinir senha</h1>
 	<form method="post" action="processarsenha-ong.php">
@@ -22,7 +28,7 @@
 	<label for="confirma_senha" class="w3-text-teal" style="font-weight: bold;">Confirmar Nova Senha:</label>
 	<input type="password" name="confirma_senha" id="confirma_senha" class="w3-input w3-light-grey w3-border"  required><br>
 
-	<input type="submit" value="Redefinir Senha">
+	<input class="w3-teal w3-button w3-right w3-round-large" type="submit" value="Redefinir Senha">
 </form>
 </div>
 </body>

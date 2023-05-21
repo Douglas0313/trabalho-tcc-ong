@@ -6,10 +6,11 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="shortcut icon" href="icone.png" type="image/x-icon">
 
 </head>
 
- <body>
+<body style="background-color: azure;">
 
  <a href="ONGpn.php" class="w3-display-topleft">
 
@@ -35,7 +36,7 @@
   <label class="w3-text-teal" style="font-weight: bold;">Descrição:</label>
   <input type="text" name="descricao" class="w3-input w3-light-grey w3-border"><br>
 
-  <input type="submit" value="Adicionar vaga">
+  <input class="w3-button w3-teal w3-right w3-round-large" type="submit" value="Adicionar vaga">
   
 </form>
 

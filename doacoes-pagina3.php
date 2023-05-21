@@ -8,10 +8,14 @@
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- 
+ <style>
+  img {
+    width: 300px;
+    height: 200px;
+  }
+ </style>
 </head>
-
-<body>
+<body style="background-color: azure;">
     
     
   <div class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-top">
@@ -53,10 +57,10 @@
 
     <label class="w3-text-teal" style="font-weight: bold;">Código de segurança</label>
     <input type="text" name="codigo" class="w3-input w3-light-grey w3-
-   border" placeholder="Digite o seu nome completo*" required>
+   border" placeholder="Digite o seu nome completo*" required> <br>
 
-   <a href="index.php">Pagar</a>
-   <a href="index.php">Cancelar</a>
+   <a class="w3-button w3-teal w3-round-large" href="index.php">Pagar</a>
+   <a class="w3-teal w3-button w3-round-large" href="index.php">Cancelar</a>
    
       </div>
 
@@ -64,23 +68,23 @@
    <div id="boleto-form"  style="display:none;" class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-middle">
 
     <label for="boleto" class="w3-text-teal" style="font-weight: bold;">Número do Boleto:</label>
-    <input type="text" id="boleto" name="boleto" type="text" name="nome" class="w3-input w3-light-grey w3-border">
+    <input type="text" id="boleto" name="boleto" type="text" name="nome" class="w3-input w3-light-grey w3-border"><br>
 
-    <a href="index.php">Pagar</a>
-   <a href="index.php">Cancelar</a>
+    <a class="w3-button w3-teal w3-round-large" href="index.php">Pagar</a>
+   <a class="w3-teal w3-button w3-round-large" href="index.php">Cancelar</a>
     <br><br>
 
   </div>
   
-    <div id="pix-form" style="display:none;" class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-left">
+    <div id="pix-form" style="display:none;" class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-left"><br><br><br><br>
 
     <label for="pix-chave" class="w3-text-teal" style="font-weight: bold;">Chave PIX:</label>
-    <br><br>
+    <br><br><br>
     
-   <img src="imagens/qr.png" >
-    
-   <a href="index.php">Pagar</a>
-   <a href="index.php">Cancelar</a>
+   <img src="imagens/qr-code.jpeg" ><br>
+    <br>
+   <a class="w3-button w3-teal w3-round-large" href="index.php">Pagar</a>
+   <a class="w3-teal w3-button w3-round-large" href="index.php">Cancelar</a>
 
    <br><br>
   </div>
@@ -95,9 +99,9 @@
     border">
     <label for="conta" class="w3-text-teal" style="font-weight: bold;">Conta:</label>
     <input type="text" id="conta" name="conta" class="w3-input w3-light-grey w3-
-    border">
-    <a href="index.php">Pagar</a>
-   <a href="index.php">Cancelar</a>
+    border"><br>
+    <a class="w3-button w3-teal w3-round-large" href="index.php">Pagar</a>
+   <a class="w3-teal w3-button w3-round-large" href="index.php">Cancelar</a>
  
     <br><br>
 

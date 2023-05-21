@@ -7,14 +7,14 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ <link rel="shortcut icon" href="icone.png" type="image/x-icon">
 
 
  <title>Adicionar a sua história</title>
 
 </head>
 
-<body>
+<body style="background-color: azure;">
 
 
 <a href="ONGpn.php" class="w3-display-topleft">
@@ -40,8 +40,8 @@ border" placeholder="Digite o nome da ONG*" ><br>
 <br>
 
 <button name="btnAdicionar" class="w3-button w3-teal w3-cell w3-
-round-large w3-right w3-margin-right">
- <i class="w3-xxlarge fa fa-user-plus"></i> Adicionar
+round-large w3-right w3-margin-right w3-round-large ">
+ <i class=""></i> Adicionar
  </button>
 
 </body>
