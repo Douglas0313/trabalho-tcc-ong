@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
 awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="shortcut icon" href="./imagens/icone.png" type="image/x-icon">
 <title>Histórias das ONGS</title>
 </head>
 <body style="background-color: azure;">

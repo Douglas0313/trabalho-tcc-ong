@@ -36,7 +36,7 @@ if (isset($_GET['nome'])) {
 
 	<h2 class="w3-center w3-teal w3-round-large" id="usuario">Conheça algumas ONG's</h2><br>
 	<a href="consulta-ongs-historias.php">Consultar Histórias das ONG's</a> <br>
-	<a href="">Consultar ONG's que apoiam o projeto</a><br>
+	<a href="consultar-ongs.php">Consultar ONG's que apoiam o projeto</a><br>
 	
 	
 	<h2 class="w3-center w3-teal w3-round-large" id="usuario">Já quer ajudar alguma ONG</h2><br>

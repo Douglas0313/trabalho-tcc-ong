@@ -24,8 +24,8 @@ if($linha != null)
 
     } else {
         echo "<script>alert('Email ou senha incorretos. Tente novamente!');</script>";
-        echo "<script>window.location.href='login-usuario.html';</script>";
-        exit();
+        echo "<script>window.location.href='login-ong.php';</script>";
+        
     }
     
 }    

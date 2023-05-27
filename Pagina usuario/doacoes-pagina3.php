@@ -12,7 +12,7 @@ session_start();
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="shortcut icon" href="../imagens/icone.png" type="image/x-icon">
  
 </head>
 
@@ -58,10 +58,9 @@ session_start();
 
     <label class="w3-text-teal" style="font-weight: bold;">Código de segurança</label>
     <input type="text" name="codigo" class="w3-input w3-light-grey w3-
-   border" placeholder="Digite o seu nome completo*" required>
-
-   <a href="usuario-pagina.php">Pagar</a>
-   <a href="usuario-pagina.php">Cancelar</a>
+   border" placeholder="Digite o seu nome completo*" required> <br>
+   <a class="w3-button w3-teal w3-round-large" href="usuario-pagina.php">Pagar</a>
+   <a class="w3-teal w3-button w3-round-large" href="usuario-pagina.php">Cancelar</a>
    
       </div>
 
@@ -69,10 +68,10 @@ session_start();
    <div id="boleto-form"  style="display:none;" class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-middle">
 
     <label for="boleto" class="w3-text-teal" style="font-weight: bold;">Número do Boleto:</label>
-    <input type="text" id="boleto" name="boleto" type="text" name="nome" class="w3-input w3-light-grey w3-border">
+    <input type="text" id="boleto" name="boleto" type="text" name="nome" class="w3-input w3-light-grey w3-border"> <br>
 
-    <a href="usuario-pagina.php">Pagar</a>
-   <a href="usuario-pagina.php">Cancelar</a>
+    <a class="w3-button w3-teal w3-round-large" href="usuario-pagina.php">Pagar</a>
+   <a class="w3-teal w3-button w3-round-large" href="usuario-pagina.php">Cancelar</a>
     <br><br>
 
   </div>
@@ -83,9 +82,10 @@ session_start();
     <br><br>
     
    <img src="imagens/qr.png" >
+   <br><br>
     
-   <a href="usuario-pagina.php">Pagar</a>
-   <a href="usuario-pagina.php">Cancelar</a>
+   <a class="w3-button w3-teal w3-round-large" href="usuario-pagina.php">Pagar</a>
+   <a class="w3-teal w3-button w3-round-large" href="usuario-pagina.php">Cancelar</a>
 
    <br><br>
   </div>
@@ -100,11 +100,11 @@ session_start();
     border">
     <label for="conta" class="w3-text-teal" style="font-weight: bold;">Conta:</label>
     <input type="text" id="conta" name="conta" class="w3-input w3-light-grey w3-
-    border">
-    <a href="usuario-pagina.php">Pagar</a>
-   <a href="usuario-pagina.php">Cancelar</a>
+    border"> <br>
+    <a class="w3-button w3-teal w3-round-large" href="usuario-pagina.php">Pagar</a>
+   <a class="w3-teal w3-button w3-round-large" href="usuario-pagina.php">Cancelar</a>
  
-    <br><br>
+    <br>
 
 </div>
 
@@ -119,10 +119,10 @@ var depositoForm = document.getElementById("deposito-form");
 pagamento.addEventListener("change", function() {
   if (pagamento.value == "boleto_bancario") {
     boletoForm.style.display = "block";
-    pixForm.style.display = "none";
     depositoForm.style.display = "none";
     cartaoForm.style.display = "none";
 
+    pixForm.style.display = "none";
   } else if (pagamento.value == "pix") {
     boletoForm.style.display = "none";
     pixForm.style.display = "block";
