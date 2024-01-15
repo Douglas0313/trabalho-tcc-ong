@@ -27,7 +27,10 @@ $sql->execute();
 
 
 echo '<script>alert("Vaga cadastrada com sucesso!")</script>';
-echo '<a href="adicionar-vaga.php">Voltar</a>';
+
+echo '<script>window.location.href = "adicionar-vaga.php";</script>';
+      exit;
+      
 
 
 

@@ -16,7 +16,8 @@ $sql->execute();
 
 
 echo '<script>alert("História adicionada com sucesso!")</script>';
-echo '<a href="ONGpn.php">Voltar</a>';
+echo '<script>window.location.href = "historia-ong.php";</script>';
+      exit;
 
 
 
